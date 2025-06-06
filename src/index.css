@@ -5,7 +5,11 @@
     font-family: "Quicksand";
     color: #333;
 }
-
+h2{
+    font-size: 24px;
+    color: #f1356d;
+    margin-bottom: 8px;
+}
 .navbar {
     padding: 20px;
     display: flex;
@@ -123,4 +127,81 @@
 .create button {
     background: #f1356d;
     color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.create button:hover {
+    background: #d92c61;
+    transform: scale(1.03);
+}
+
+/* not found */
+
+.not-found {
+  text-align: center;
+  margin: 100px auto;
+  max-width: 500px;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+.not-found h2 {
+  font-size: 28px;
+  color: #f1356d;
+  margin-bottom: 20px;
+}
+
+.not-found p {
+  font-size: 18px;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.not-found a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #f1356d;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.not-found a:hover {
+  background-color: #d72354;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar, .content, .create, .not-found {
+        max-width: 90%;
+        margin: 20px auto;
+        padding: 10px;
+    }
+
+    .navbar h1 {
+        font-size: 20px;
+    }
+
+    h2, .create h2, .not-found h2 {
+        font-size: 22px;
+    }
+
+    .not-found p {
+        font-size: 16px;
+    }
+
+    .create button, .not-found a {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
 }

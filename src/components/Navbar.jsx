@@ -1,10 +1,10 @@
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const Navbar = () => {
   return (
     <>
       <nav className="navbar">
-        <h1>Reactify Blog</h1>
+       <Link to="/">{<h1>Reactify Blog</h1>}</Link> 
         <div className="links">
           <NavLink
             to="/"
